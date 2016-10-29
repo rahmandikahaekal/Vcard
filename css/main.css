@@ -487,3 +487,382 @@ nav#mainNav a.active:after{
 	-o-border-radius: 4px 0 0 4px;
 
 }
+
+/* =========================================
+    Portfolio
+============================================*/
+
+#works {
+    margin-bottom: 40px;
+}
+
+.filterNav {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+ul#category {
+    display: inline-block;
+    position: relative;
+}
+
+ul#category li {
+    display: inline-block;
+}
+
+ul#category li a {
+    color: #444444;
+    display: inline-block;
+    padding: 10px 18px;
+    position: relative;
+}
+
+ul#category li a:hover {
+    color: #03CC85;
+}
+
+#category .current a:after {
+    border-bottom: 1px solid #03CC85;
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -7px;
+    top: 35px;
+    width: 14px;
+    z-index: 0;
+}
+
+#category .current a {
+    color: #03CC85;
+}
+
+.item{
+
+	position: relative;
+	width: 320px !important;
+	margin-left:0 !important;
+	margin-right:0 !important;
+
+}
+
+.item a .desc {
+	
+    background: rgba(3, 204, 133, 0.95);
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+	left:0;
+	top:0;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	
+}
+
+.item a .desc h3{
+	color:#ffffff;
+}
+
+.projDesc span {
+	display:block;
+}
+
+/* =========================================
+    Contact
+============================================*/
+
+.contactForm h2 {
+    margin-bottom: 10px;
+}
+
+.cForm {
+    text-align: left;
+}
+
+.cForm form {
+    width: 580px;
+    margin: 50px auto 10px;
+}
+
+.cForm input[type="text"], .cForm input[type="email"], input[type="number"], .cForm textarea {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #EFEFEF;
+    color: #666666;
+    margin-bottom: 10px;
+    outline-width: 0;
+    padding-left: 10px;
+}
+
+.cForm input[type="text"], .respondForm input[type="email"] {
+    font-size: 13px;
+    height: 40px;
+    margin-bottom: 20px;
+    width: 560px;
+}
+
+.cForm textarea {
+    height: 170px;
+    margin-bottom: -5px;
+    padding-top: 10px;
+    width: 560px;
+    font-size: 13px;
+}
+
+.fBtn {
+    text-align: center;
+}
+
+.cForm form #submit {
+    color: #343434;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 50px;
+    background: #ffffff;
+}
+
+#sucsess, #error {
+    display: none;
+    position: relative;
+}
+
+#sucesss h2, #error h2 {
+    color: #1FB4DA;
+    font-size: 11px;
+    left: 40%;
+    position: absolute;
+    top: 20px;
+}
+
+#error h2 {
+    color: #CE3D3D;
+}
+
+.errorForm {
+    border: 1px solid #da4856 !important;
+}
+
+/* =========================================
+    Footer
+============================================*/
+
+.footer{
+	
+}
+
+.footer.offset{
+	padding-bottom:0;
+}
+
+.footerholder{
+	background-color: #343434;
+	padding:50px 0;
+	font-size:12px;
+	color:#cccccc;
+}
+
+.footerholder p{
+	margin-top:10px;
+}
+
+.bLogo{
+	text-transform: uppercase;
+	color:#555555;
+	position:relative;
+}
+
+.bLogo:after {
+    border-bottom: 2px solid #555555;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 1px;
+    top: 15px;
+    width: 10px;
+    z-index: 0;
+}
+
+.socialsFooter{
+	float:right;
+}
+
+.socialsFooter li {
+    display: inline-block;
+    margin-right: 2px;
+    text-align: center;
+}
+
+.socialsFooter a {
+    border: 3px solid #555555;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+    color: #555555;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+}
+
+.socialsFooter li i {
+    line-height: 35px;
+}
+
+.socialsFooter a:hover {
+	border: 3px solid #cccccc;
+    color: #cccccc;
+}
+
+/* =========================================
+    Media Queries
+============================================*/
+/*iPad lanscape*/
+@media screen and (max-device-width: 960px){
+	input, textarea{-webkit-appearance: none;-webkit-border-radius:0;}
+	#loaderInner {margin: -50px 0 0 -30px;}
+	.dtIco span.date{font-family: 'open_sansregular';font-style:italic;}
+	
+}
+
+
+
+/* Tablet Portrait size -> standard 960 */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	#loaderInner {margin: -50px 0 0 -30px;}
+	input, textarea{-webkit-appearance: none;-webkit-border-radius:0;}
+	.dtIco span.date{font-family: 'open_sansregular';font-style:italic;}
+	.shortBtn{right:358px;}
+	.det{width:300px;}
+	.skillsList li{margin-bottom:15px;}
+	.getCv h3{padding:15px 14px;}
+	.item{width: 256px !important;}
+	.employment:before, .education:before{left:5%;}
+}
+
+
+/* Mobile Landscape Size -> Tablet Portrait size*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	input, textarea{-webkit-appearance: none;-webkit-border-radius:0;}
+	html{-webkit-text-size-adjust: none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;}
+	
+	#loaderInner {margin: -50px 0 0 -30px;}
+	.dtIco span.date{font-family: 'open_sansregular';font-style:italic;}
+	.logo, nav#mainNav{float:none;}
+		nav#mainNav{margin-right:0;margin-top:69px;}
+		
+		nav#mainNav ul{display:none;margin-bottom:10px;}
+		nav#mainNav li{float:none; display:block;}
+		nav#mainNav a.active:after{right:1px;top:22px;}
+		.topSocials{display:none;}
+		nav#mainNav li a{padding:3px 0px;display:inline-block;}
+		.mobileBtn{display: inline-block;float: right;margin-right: 190px;margin-top: -51px;position: relative;}
+		
+		
+		.shortBtn{right:-75px;top:-340px;}
+		.imgAbout{height:40%;width:100%;}
+		.aboutContent {margin-left: 0;}
+		.overview{margin-top: 100%;}
+		
+		.employment, .education{margin-top:50px;}
+		.employment:before, .education:before{background:none;}
+		.dtIco {margin-left:10px;}
+		.det{width:420px;margin-left:0;margin-top: 30px;}
+		.det:before {
+		    left: 10px;
+		    top: -17px;
+		    ttransform: rotate(0deg);
+			-moz-transform:rotate(0deg);
+			-webkit-transform:rotate(0deg);
+			-o-transform:rotate(0deg);
+			-ms-transform:rotate(0deg);
+		}
+		
+		.det:after {
+		    left: 10px;
+		    top: -13px;
+		    transform: rotate(0deg);
+			-moz-transform:rotate(0deg);
+			-webkit-transform:rotate(0deg);
+			-o-transform:rotate(0deg);
+			-ms-transform:rotate(0deg);
+		}
+		
+		
+		.item{width: 420px !important;}
+		.item a .desc {left: 50px;width: 76.3%;}
+		
+		
+		.cForm form{width:400px;}
+		.cForm input[type="text"], .respondForm input[type="email"]{width:400px;}
+		.cForm textarea{width:400px;}
+		
+		.footerholder{text-align:center;}
+		.socialsFooter{float:none;margin-top:10px;}
+}
+
+/* Mobile Portrait Size -> Mobile Landscape Size */
+@media only screen and (max-width:479px) {
+	
+	input, textarea{-webkit-appearance: none;-webkit-border-radius:0;}
+	html{-webkit-text-size-adjust: none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;}
+	
+	#loaderInner {margin: -50px 0 0 -30px;}
+	.dtIco span.date{font-family: 'open_sansregular';font-style:italic;}
+	.logo, nav#mainNav{float:none;}
+		nav#mainNav{margin-right:0;margin-top:69px;}
+		
+		nav#mainNav ul{display:none;margin-bottom:10px;}
+		nav#mainNav li{float:none; display:block;}
+		nav#mainNav a.active:after{right:1px;top:22px;}
+		.topSocials{display:none;}
+		nav#mainNav li a{padding:3px 0px;display:inline-block;}
+		.mobileBtn{display: inline-block;float: right;margin-right: 135px;margin-top: -51px;position: relative;}
+		
+		
+		.shortBtn{right:-10px;top:-290px;}
+		.imgAbout{height:20%;width:100%;}
+		.aboutContent {margin-left: 0;}
+		.overview{margin-top: 100%;}
+		
+		.employment, .education{margin-top:50px;}
+		.employment:before, .education:before{background:none;}
+		.dtIco {margin-left:10px;}
+		.det{width:300px;margin-left:0;margin-top: 30px;}
+		.det:before {
+		    left: 10px;
+		    top: -17px;
+		    ttransform: rotate(0deg);
+			-moz-transform:rotate(0deg);
+			-webkit-transform:rotate(0deg);
+			-o-transform:rotate(0deg);
+			-ms-transform:rotate(0deg);
+		}
+		
+		.det:after {
+		    left: 10px;
+		    top: -13px;
+		    transform: rotate(0deg);
+			-moz-transform:rotate(0deg);
+			-webkit-transform:rotate(0deg);
+			-o-transform:rotate(0deg);
+			-ms-transform:rotate(0deg);
+		}
+		
+		ul#category li{display:block;}
+		.item{width: 300px !important;}
+		
+		
+		.cForm form{width:300px;}
+		.cForm input[type="text"], .respondForm input[type="email"]{width:300px;}
+		.cForm textarea{width:300px;}
+		
+		.footerholder{text-align:center;}
+		.socialsFooter{float:none;margin-top:10px;}	
+}
